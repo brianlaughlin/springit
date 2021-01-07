@@ -1,4 +1,4 @@
-package com.vega.springit.model;
+package com.vega.springit.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,16 +10,12 @@ import javax.persistence.Id;
 @Entity
 @NoArgsConstructor
 @Data
-public class Vote {
+public class comment {
 
     @Id
     @GeneratedValue
-    private long id;
-    private int vote;
-
-    public long getId() {
-        return id;
-    }
+    private Long id;
+    private String body;
 
 
 }
